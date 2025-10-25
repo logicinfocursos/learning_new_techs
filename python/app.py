@@ -18,7 +18,6 @@ API_PORT = int(os.getenv("API_PORT", 8000))
 # Equivalente a const app = express() e const prisma = new PrismaClient() no Node.js
 app = FastAPI()
 
-
 # Dependency do FastAPI para criar/fechar sessão do banco em cada requisição
 # Equivalente ao uso do prisma em cada rota do Express
 def get_db():
@@ -39,10 +38,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
 # 4. Definição das rotas da API
 # Equivalente às rotas do Express (app.get, app.post, etc.)
-
 
 # 4.1 Rota GET /movies - Listar todos os filmes
 @app.get("/movies")
@@ -50,7 +47,6 @@ def get_movies(db=Depends(get_db)):
     # Equivalente a prisma.movie.findMany() no Node.js
     movies = db.query(Movie).all()
     return movies
-
 
 # 4.2 Rota GET /movies/{movie_id} - Obter um filme por ID
 @app.get("/movies/{movie_id}")
@@ -60,7 +56,6 @@ def get_movie(movie_id: int, db=Depends(get_db)):
     if not movie:
         raise HTTPException(status_code=404, detail="Filme não encontrado")
     return movie
-
 
 # 4.3 Rota POST /movies - Criar um novo filme
 @app.post("/movies")
@@ -72,8 +67,7 @@ def create_movie(movie: MovieSchema, db=Depends(get_db)):
     db.refresh(new_movie)
     return new_movie
 
-
-# 4.4 Rota PUT /movies/{movie_id} - Atualizar um filme existente
+# 4.4 Rota PUT /movies/{movie_id} - Atualizar um filme
 @app.put("/movies/{movie_id}")
 def update_movie(movie_id: int, movie: MovieSchema, db=Depends(get_db)):
     # Equivalente a prisma.movie.update({ where: { id }, data })
@@ -86,8 +80,7 @@ def update_movie(movie_id: int, movie: MovieSchema, db=Depends(get_db)):
     db.refresh(db_movie)
     return db_movie
 
-
-# 4.5 Rota DELETE /movies/{movie_id} - Deletar um filme existente
+# 4.5 Rota DELETE /movies/{movie_id} - Deletar um filme
 @app.delete("/movies/{movie_id}")
 def delete_movie(movie_id: int, db=Depends(get_db)):
     # Equivalente a prisma.movie.delete({ where: { id } })
@@ -98,11 +91,9 @@ def delete_movie(movie_id: int, db=Depends(get_db)):
     db.commit()
     return {"detail": "Filme deletado"}
 
-
 # 5. Inicialização do servidor
-# Equivalente a app.listen(port, ...) no Node.js
+# Equivalente a app.listen(API_PORT, ...) no Node.js
 if __name__ == "__main__":
     import uvicorn
-
     print(f"API Python rodando na porta {API_PORT}")
     uvicorn.run("app:app", host="0.0.0.0", port=API_PORT, reload=True)
