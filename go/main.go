@@ -1,6 +1,7 @@
 // main.go
 package main
 
+// 0. Importações de dependências
 import (
 	"log"
 	"net/http"

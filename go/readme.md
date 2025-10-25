@@ -15,7 +15,7 @@ go version
 ### 2. Clonar o projeto
 
 ```bash
-git clone <url-do-repositorio>
+git clone <url-do-repositorio> add 
 cd go
 ```
 
@@ -108,3 +108,12 @@ Depois, execute no terminal:
 ```
 go run seed.go
 ```
+
+
+O GORM possui um recurso de migration automático via o método AutoMigrate. Ele cria e atualiza tabelas conforme os structs do seu código, mas não gera arquivos de migração versionados como o Prisma, Sequelize ou Alembic.
+
+Exemplo de uso (já presente no projeto - vide database\db.go):
+```
+database.AutoMigrate(&structs.Movie{})
+```
+Para projetos mais avançados, existem ferramentas externas como golang-migrate para migrations versionadas, mas o padrão do GORM é o AutoMigrate.
