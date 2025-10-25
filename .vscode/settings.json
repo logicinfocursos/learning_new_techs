@@ -1,0 +1,14 @@
+{
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#33ff522f",
+    "statusBar.debuggingBackground": "#33ff522f",
+    "statusBar.noFolderBackground": "#33ff522f",
+    "statussBar.prominentBackground": "#33ff522f"
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.requireConfig": true,
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  }
+}
