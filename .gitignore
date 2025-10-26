@@ -1,0 +1,54 @@
+# Node.js
+node-javascript/node_modules/
+node-javascript/dist/
+node-javascript/.env
+node-javascript/npm-debug.log*
+node-javascript/yarn-debug.log*
+node-javascript/yarn-error.log*
+node-javascript/prisma/migrations/*/README.md
+node-javascript/prisma/migrations/*/migration.sql
+node-javascript/.gitignore
+node-javascript/generated/prisma
+
+# TypeScript
+node-typescript/node_modules/
+node-typescript/dist/
+node-typescript/.env
+node-typescript/npm-debug.log*
+node-typescript/yarn-debug.log*
+node-typescript/yarn-error.log*
+node-typescript/*.tsbuildinfo
+node-typescript/prisma/migrations/*/README.md
+node-typescript/prisma/migrations/*/migration.sql
+
+# Python
+python/__pycache__/
+python/*.pyc
+python/*.pyo
+python/*.pyd
+python/.env
+python/venv/
+python/.env/
+
+# Go
+go/bin/
+go/*.exe
+go/*.test
+go/*.out
+
+# Rust
+rust/target/
+rust/Cargo.lock
+rust/.env
+
+# PHP
+php/vendor/
+php/.env
+php/composer.lock
+
+# Misc
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+*.swo
