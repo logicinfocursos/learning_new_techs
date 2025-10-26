@@ -1,0 +1,30 @@
+# Ignorar arquivos e pastas gerados pelo Rust
+/target/
+Cargo.lock
+**/*.rs.bk
+
+# Ignorar arquivos de ambiente
+.env
+**/.env
+
+# Ignorar arquivos temporários e de IDE
+*.swp
+*.swo
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos de build
+*.exe
+*.out
+*.test
+**/*.exe
+**/*.out
+**/*.test
+
+# Ignorar arquivos de dependências
+node_modules/

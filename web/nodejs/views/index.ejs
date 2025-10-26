@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Filmes (em nodejs /ejs)</h1>
+    <div class="cards-container">
+        <% movies.forEach(function(movie) { %>
+            <div class="card">
+                <img src="<%= movie.posterurl %>" alt="<%= movie.name %>" class="poster">
+                <div class="card-content">
+                    <h2><%= movie.name %></h2>
+                    <p class="overview"><%= movie.overview %></p>
+                    <p class="genres"><strong>Gêneros:</strong> <%= movie.genres %></p>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</body>
+</html>

@@ -16,6 +16,9 @@ Em alguns casos, o frontend será web (a nossa prioridade), mas em algumas situa
 
 Talvez quando você encontrar esse material eu ainda esteja gerando dos conteúdos, peço a sua paciência, pois a jornada necessária para criar esse volume de conteúdo é muito grande. Irei iniciar pelo backend...
 
+### Como "rodar" os projetos
+Em cada pasta referente ao projeto/tecnologia, você irá encontrar um arquivo readme.md com instruções de como instalar as dependências e executar o projeto.
+
 ### API's (backend) 
 Para o módulo de apis, cada etapa está númerada e em todos os projetos, mantendo a mesma ordem de execução:
 0. Importar as dependências
@@ -28,7 +31,7 @@ Para o módulo de apis, cada etapa está númerada e em todos os projetos, mante
 
 Independente da tecnologia escolhida, o código irá seguir essa ordem de execução das etapas.
 
-#### Tecnologias
+#### Tecnologias backend
 - Node.js com javascript (Framework: Express e ORM: Prisma) "done"
 - Node.js com typescript (Framework: Express e ORM: Prisma) "done"
 - Node.js com typescript (Framework: nest js e ORM: sequelize) "to do"
@@ -37,7 +40,7 @@ Independente da tecnologia escolhida, o código irá seguir essa ordem de execu�
 - Python (Framework: Flask e ORM: SQLAlchemy) "to do"
 - Python (Framework: Django e ORM: Django ORM) "to do"
 - Go (Framework: Gin e ORM: GORM) "done"
-- PHP (Framework: Slim e ORM: Doctrine) "doing"
+- PHP (Framework: Slim e ORM: Doctrine) "done"
 - PHP (Framework: Laravel e ORM: Eloquent) "to do"
 - Ruby (Framework: Ruby on Rails e ORM: ActiveRecord) "to do"
 - Rust (Framework: Rocket e ORM: Diesel) "doing"
@@ -47,29 +50,26 @@ Independente da tecnologia escolhida, o código irá seguir essa ordem de execu�
 - dart / flutter (Framework: Flutter e ORM: Hive) "to do"
 
 
-## Como "rodar" o projeto
-Em cada pasta você irá encontrar um arquivo readme.md com instruções de como rodar o projeto.
-
 ### APP's (frontend)
+Os apps terão a mesma funcionalidade básica listar os registros obtidos pelas apis. Todos os apps web irão usar o mesmo css para garantir que todos tenham a mesma aparência final e como nos projetos de backend, os projetos de frontend tentarão serguir o mesmo padrão independente da tecnologia escolhida.
 
-#### Tecnologias
-- react & next js com javascript - web
-- react & next js com typescript - web
-- Node.js com javascript  - web
-- Node.js com typescript  - web
-- react native & expo js com javascript - mobile
-- react native & expo js com typescript - mobile
-- react native & expo js com typescript - TypeORM (persistência local com SQLite)
-- electron js com javascript - desktop
-- electron js com typescript - desktop
-- Python  - web
-- Go  - web
-- PHP  - web
-- Ruby   - desktop
-- Rust  - desktop
-- Java  - web
-- C# - web
-- dart / flutter - mobile
-- kotlin - Kotlin Multiplatform (KMP) / Room (persistência local com SQLite)
+#### Tecnologias frontend
+- node js com javascript, express e ejs - web "done"
+- react & next js com javascript - web  "to do"
+- react & next js com typescript - web  "to do"
+- react native & expo js com javascript - mobile  "to do"
+- react native & expo js com typescript - mobile  "to do"
+- react native & expo js com typescript - TypeORM (persistência local com SQLite)  "to do"
+- electron js com javascript - desktop  "to do"
+- electron js com typescript - desktop  "to do"
+- Python & flask - web  "done"
+- Go  - web  "done"
+- PHP  - web  "done"
+- Ruby   - desktop  "to do"
+- Rust  - desktop  "to do"
+- Java  - web  "to do"
+- C# - web  "to do"
+- dart / flutter - mobile  "to do"
+- kotlin - Kotlin Multiplatform (KMP) / Room (persistência local com SQLite)  "to do"
 
 

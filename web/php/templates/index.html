@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Filmes</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <h1>Filmes (php)</h1>
+    <div class="cards-container">
+        <?php foreach ($movies as $movie): ?>
+        <div class="card">
+            <img src="<?= htmlspecialchars($movie['posterurl']) ?>" alt="<?= htmlspecialchars($movie['name']) ?>" class="poster">
+            <div class="card-content">
+                <h2><?= htmlspecialchars($movie['name']) ?></h2>
+                <p class="overview"><?= htmlspecialchars($movie['overview']) ?></p>
+                <p class="genres"><strong>Gêneros:</strong> <?= htmlspecialchars($movie['genres']) ?></p>
+            </div>
+        </div>
+        <?php endforeach; ?>
+    </div>
+</body>
+</html>

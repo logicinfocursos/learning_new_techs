@@ -1,0 +1,18 @@
+{
+    "name": "learning_new_techs/php",
+    "description": "Projeto PHP com Slim Framework e Dotenv",
+    "require": {
+        "slim/slim": "^4.0",
+        "slim/psr7": "^1.0",
+        "vlucas/phpdotenv": "^5.0",
+        "doctrine/orm": "^2.10",
+        "doctrine/cache": "^2.2",
+        "symfony/cache": "^7.3",
+        "doctrine/annotations": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Entity\\": "src/Entity/"
+        }
+    }
+}
