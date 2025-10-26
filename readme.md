@@ -72,4 +72,4 @@ Os apps terão a mesma funcionalidade básica listar os registros obtidos pelas 
 - dart / flutter - mobile  "to do"
 - kotlin - Kotlin Multiplatform (KMP) / Room (persistência local com SQLite)  "to do"
 
-<img src="assets/images/frontend.png" alt="drawing" width="600"/>
+<img src="https://personalizetudo.com.br/assets/images/frontend.png" alt="drawing" width="600"/>
