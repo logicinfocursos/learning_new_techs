@@ -18,31 +18,33 @@ Talvez quando você encontrar esse material eu ainda esteja gerando dos conteúd
 
 ### API's (backend) 
 Para o módulo de apis, cada etapa está númerada e em todos os projetos, mantendo a mesma ordem de execução:
-0. Importações de dependências
-1. Carrega variáveis do .env
-2. Define a porta da API
-3. Inicialização do framework e ORM (conexão com o banco de dados + estrutura de dados)
-4. Middlewares (CORS, etc)
-5. Definição das rotas da API
-6. Inicialização do servidor na porta definida (API_PORT)
+0. Importar as dependências
+1. Carregar as variáveis do .env
+2. Definir a porta da API
+3. Inicializar o framework e ORM (conexão com o banco de dados + estrutura de dados)
+4. Configurar os Middlewares (CORS, etc)
+5. Definir as rotas da API
+6. Inicializar o servidor na porta definida (API_PORT)
 
 Independente da tecnologia escolhida, o código irá seguir essa ordem de execução das etapas.
 
 #### Tecnologias
-- Node.js com javascript (Framework: Express e ORM: Prisma)
-- Node.js com typescript (Framework: Express e ORM: Prisma)
-- Python (Framework: FastAPI e ORM: SQLAlchemy)
-- Python (Framework: Flask e ORM: SQLAlchemy)
-- Python (Framework: Django e ORM: Django ORM)
-- Go (Framework: Gin e ORM: GORM)
-- PHP (Framework: Slim e ORM: Doctrine)
-- PHP (Framework: Laravel e ORM: Eloquent)
-- Ruby (Framework: Ruby on Rails e ORM: ActiveRecord)
-- Rust (Framework: Rocket e ORM: Diesel)
-- Java (Framework: Spring Boot e ORM: Hibernate)
-- C# (Framework: ASP.NET Core e ORM: Entity Framework)
-- c++ (Framework: Qt e ORM: QtSql)
-- dart / flutter (Framework: Flutter e ORM: Hive)
+- Node.js com javascript (Framework: Express e ORM: Prisma) "done"
+- Node.js com typescript (Framework: Express e ORM: Prisma) "done"
+- Node.js com typescript (Framework: nest js e ORM: sequelize) "to do"
+- Node.js com typescript (Framework: Fastify e ORM: typeORM) "to do"
+- Python (Framework: FastAPI e ORM: SQLAlchemy)  "to do"
+- Python (Framework: Flask e ORM: SQLAlchemy) "to do"
+- Python (Framework: Django e ORM: Django ORM) "to do"
+- Go (Framework: Gin e ORM: GORM) "done"
+- PHP (Framework: Slim e ORM: Doctrine) "doing"
+- PHP (Framework: Laravel e ORM: Eloquent) "to do"
+- Ruby (Framework: Ruby on Rails e ORM: ActiveRecord) "to do"
+- Rust (Framework: Rocket e ORM: Diesel) "doing"
+- Java (Framework: Spring Boot e ORM: Hibernate) "to do"
+- C# (Framework: ASP.NET Core e ORM: Entity Framework) "to do"
+- c++ (Framework: Qt e ORM: QtSql) "to do"
+- dart / flutter (Framework: Flutter e ORM: Hive) "to do"
 
 
 ## Como "rodar" o projeto
@@ -51,21 +53,23 @@ Em cada pasta você irá encontrar um arquivo readme.md com instruções de como
 ### APP's (frontend)
 
 #### Tecnologias
-- react & next js com javascript
-- react & next js com typescript
-- Node.js com javascript 
-- Node.js com typescript 
-- react native & expo js com javascript
-- react native & expo js com typescript
-- electron js com javascript
-- electron js com typescript
-- Python 
-- Go 
-- PHP 
-- Ruby 
-- Rust 
-- Java 
-- C#
-- dart / flutter
+- react & next js com javascript - web
+- react & next js com typescript - web
+- Node.js com javascript  - web
+- Node.js com typescript  - web
+- react native & expo js com javascript - mobile
+- react native & expo js com typescript - mobile
+- react native & expo js com typescript - TypeORM (persistência local com SQLite)
+- electron js com javascript - desktop
+- electron js com typescript - desktop
+- Python  - web
+- Go  - web
+- PHP  - web
+- Ruby   - desktop
+- Rust  - desktop
+- Java  - web
+- C# - web
+- dart / flutter - mobile
+- kotlin - Kotlin Multiplatform (KMP) / Room (persistência local com SQLite)
 
 

@@ -5,10 +5,10 @@ node-javascript/.env
 node-javascript/npm-debug.log*
 node-javascript/yarn-debug.log*
 node-javascript/yarn-error.log*
-node-javascript/prisma/migrations/*/README.md
-node-javascript/prisma/migrations/*/migration.sql
-node-javascript/.gitignore
+node-javascript/prisma/migrations/
 node-javascript/generated/prisma
+node-javascript/package-lock.json
+node-javascript/yarn.lock
 
 # TypeScript
 node-typescript/node_modules/
@@ -18,8 +18,9 @@ node-typescript/npm-debug.log*
 node-typescript/yarn-debug.log*
 node-typescript/yarn-error.log*
 node-typescript/*.tsbuildinfo
-node-typescript/prisma/migrations/*/README.md
-node-typescript/prisma/migrations/*/migration.sql
+node-typescript/prisma/
+node-typescript/package-lock.json
+node-typescript/yarn.lock
 
 # Python
 python/__pycache__/
@@ -28,7 +29,7 @@ python/*.pyo
 python/*.pyd
 python/.env
 python/venv/
-python/.env/
+
 
 # Go
 go/bin/
@@ -40,6 +41,7 @@ go/*.out
 rust/target/
 rust/Cargo.lock
 rust/.env
+rust/*.exe
 
 # PHP
 php/vendor/
