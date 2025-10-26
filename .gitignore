@@ -9,6 +9,8 @@ node-javascript/prisma/migrations/
 node-javascript/generated/prisma
 node-javascript/package-lock.json
 node-javascript/yarn.lock
+node-javascript/**/package-lock.json
+node-javascript/**/yarn.lock
 
 # TypeScript
 node-typescript/node_modules/
@@ -21,6 +23,8 @@ node-typescript/*.tsbuildinfo
 node-typescript/prisma/
 node-typescript/package-lock.json
 node-typescript/yarn.lock
+node-typescript/**/package-lock.json
+node-typescript/**/yarn.lock
 
 # Python
 python/__pycache__/
@@ -34,6 +38,7 @@ python/venv/
 # Go
 go/bin/
 go/*.exe
+go/**/*.exe
 go/*.test
 go/*.out
 
