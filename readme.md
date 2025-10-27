@@ -1,14 +1,14 @@
-# Aprendizado de novas tecnologias
+# Acelere o seu aprendizado de novas tecnologias 
 [código fonte](https://github.com/logicinfocursos/learning_new_techs.git)
-
-## Aprenda a programar novas tecnologias usando o conhecimento que você já tem
-Esse projeto é um conjunto de exemplos com o objetivo de ajudar você a aprender novas tecnologias usando a tecnologia que você já conhece. Aprendizado por analogia. 
+Como seria aprender de uma só vez 2, 3, 10 novas linhagues de programação?
+## Aprenda novas tecnologias usando o conhecimento que você já tem
+O meu objetivo é criar um conjunto de exemplos para ajudar você a aprender novas <strong>tecnologias</strong> usando a <strong>tecnologia</strong> que você já conhece. <strong>Aprendizado por analogia. </strong>
 
 Dessa forma irei presumir que você já conhece o básico da programação e ao menos uma das tecnologias abordadas neste projeto.
 
-Por exemplo, se você já conhece Node JS, vai ficar fácil aprender python replicando o mesmo projeto na mesma ordem. 
+Por exemplo, se você já conhece Node JS, vai ficar fácil aprender python replicando o mesmo projeto usando, na medida do possível, a mesma estrutura em ambas tecnologias. 
 
-Iremos construir as api's (backend) e os app (frontend).
+Iremos construir as api's (backend) para acesso ao banco de dados e os app (frontend) para consultar os resultados.
 
 É imporante que cada tecnologia tem caracteríscitas que muitas vezes não são encontradas em outras. Por exemplo Go e Rust, não implementam o conceito de O.O. (objeto-orientado) e C# e Java não tem o conceito de métodos estáticos.
 
@@ -26,50 +26,62 @@ Para o módulo de apis, cada etapa está númerada e em todos os projetos, mante
 2. Definir a porta da API
 3. Inicializar o framework e ORM (conexão com o banco de dados + estrutura de dados)
 4. Configurar os Middlewares (CORS, etc)
-5. Definir as rotas da API
+5. Definir as rotas da API para a realização do CRUD (create, read, update e delete - métodos http POST, GET, PUT e DELETE)
 6. Inicializar o servidor na porta definida (API_PORT)
+
 
 Independente da tecnologia escolhida, o código irá seguir essa ordem de execução das etapas.
 
 #### Tecnologias backend
-- Node.js com javascript (Framework: Express e ORM: Prisma) "done"
-- Node.js com typescript (Framework: Express e ORM: Prisma) "done"
-- Node.js com typescript (Framework: nest js e ORM: sequelize) "to do"
-- Node.js com typescript (Framework: Fastify e ORM: typeORM) "to do"
-- Python (Framework: FastAPI e ORM: SQLAlchemy)  "to do"
-- Python (Framework: Flask e ORM: SQLAlchemy) "to do"
-- Python (Framework: Django e ORM: Django ORM) "to do"
-- Go (Framework: Gin e ORM: GORM) "done"
-- PHP (Framework: Slim e ORM: Doctrine) "done"
-- PHP (Framework: Laravel e ORM: Eloquent) "to do"
-- Ruby (Framework: Ruby on Rails e ORM: ActiveRecord) "to do"
-- Rust (Framework: Rocket e ORM: Diesel) "doing"
-- Java (Framework: Spring Boot e ORM: Hibernate) "to do"
-- C# (Framework: ASP.NET Core e ORM: Entity Framework) "to do"
-- c++ (Framework: Qt e ORM: QtSql) "to do"
-- dart / flutter (Framework: Flutter e ORM: Hive) "to do"
+- Node.js com javascript (Framework: Express e ORM: Prisma)
+- Node.js com typescript (Framework: Express e ORM: Prisma)
+- Python (Framework: FastAPI e ORM: SQLAlchemy) 
+- Go (Framework: Gin e ORM: GORM)
+- PHP (Framework: Slim e ORM: Doctrine) 
 
 
 ### APP's (frontend)
-Os apps terão a mesma funcionalidade básica listar os registros obtidos pelas apis. Todos os apps web irão usar o mesmo css para garantir que todos tenham a mesma aparência final e como nos projetos de backend, os projetos de frontend tentarão serguir o mesmo padrão independente da tecnologia escolhida.
 
-#### Tecnologias frontend
-- node js com javascript, express e ejs - web "done"
-- react & next js com javascript - web  "to do"
-- react & next js com typescript - web  "to do"
-- react native & expo js com javascript - mobile  "to do"
-- react native & expo js com typescript - mobile  "to do"
-- react native & expo js com typescript - TypeORM (persistência local com SQLite)  "to do"
-- electron js com javascript - desktop  "to do"
-- electron js com typescript - desktop  "to do"
-- Python & flask - web  "done"
-- Go  - web  "done"
-- PHP  - web  "done"
-- Ruby   - desktop  "to do"
-- Rust  - desktop  "to do"
-- Java  - web  "to do"
-- C# - web  "to do"
-- dart / flutter - mobile  "to do"
-- kotlin - Kotlin Multiplatform (KMP) / Room (persistência local com SQLite)  "to do"
+Para simplificar todos os apps de frontend terão a mesma funcionalidade básica, listar os registros obtidos através dos retornos das requisições http recebidos através da api. Existem várias possibilidades para realizar a exibição dos registros, dependendo do dispositivo e métodos de exibição: Para acesso via computadores poderemos ter apps web, desktop e console (terminal) e para celulares poderemos visualizar por apps mobile ou através de navagadores web.
 
+Para os apps web, independente da tecnologia utilizada (node com javascript, go, python ou php) para garantir resultados virtualmente iguais (mesmo layout de apresentação), todos os apps irão usar o mesmo arquivo css e a mesma estrutura para compor o arquivo html.
+
+Na medida do possível iremos acrescentando novas tecnologias e formas de apresentação.
+
+
+#### WEB
+- node js com javascript, express e ejs
+- Python & flask
+- Go  - web 
+- PHP  - web 
+
+abaixo uma imagem para ilustrar a aparência a ser obtida em todos os apps:
 <img src="https://personalizetudo.com.br/assets/images/frontend.png" alt="drawing" width="600"/>
+
+# Comparação Rápida: JavaScript, TypeScript, Go, Python e PHP
+
+> Tabela prática para devs que já conhecem pelo menos uma linguagem (especialmente JavaScript). Foco em conceitos do dia a dia.
+
+| Categoria | JavaScript (Node.js) | TypeScript (Node.js) | Go | Python | PHP |
+|---------|------------------------|------------------------|----|--------|-----|
+| **Orientação a Objetos** | `class`, `new`, `this`. Herança com `extends`. | Mesmo que JS + tipos (`private`, `public`, etc.). | Não tem OOP clássica. Usa `struct` + métodos com *receiver*. Sem herança. | Tudo é objeto. `class`, `__init__`, herança múltipla. | `class`, `extends`, `public/private/protected`, traits. |
+| **Construtor** | `constructor() { }` | `constructor() { }` | Não há. Inicializa via função ou literal. | `def __init__(self, ...):` | `public function __construct() { }` |
+| **Funções** | `function f() { }` ou `const f = () => {}` | Mesmo que JS + tipos: `function f(): void {}` | `func f() { }` | `def f():` | `function f() { }` |
+| **Blocos** | `{ }` | `{ }` | `{ }` | `:` + indentação | `{ }` |
+| **Comentários** | `//` ou `/* */` | `//` ou `/* */` | `//` ou `/* */` | `#` ou `"""` | `//`, `#` ou `/* */` |
+| **Variáveis** | `let x = 1`, `const y = 2` | `let x: number = 1` | `x := 1` ou `var x = 1` | `x = 1` | `$x = 1;` |
+| **Constantes** | `const PI = 3.14` | `const PI = 3.14` | `const PI = 3.14` | Convenção: `PI = 3.14` | `const PI = 3.14;` ou `define('PI', 3.14)` |
+| **Listas / Arrays** | `[1, 2, 3]` | `number[] = [1, 2, 3]` | `[]int{1, 2, 3}` | `[1, 2, 3]` | `[1, 2, 3]` |
+| **Dicionários / Objetos** | `{ a: 1 }` | `{ a: number }` | `map[string]int{"a": 1}` | `{"a": 1}` | `["a" => 1]` |
+| **`if`** | `if (cond) { }` | `if (cond) { }` | `if cond { }` | `if cond:` | `if ($cond) { }` |
+| **Loops** | `for`, `for...of`, `while` | Mesmo que JS | `for i := 0; i < n; i++` ou `for k, v := range m` | `for item in list:`, `while` | `for`, `foreach`, `while` |
+| **Tratamento de erros** | `try { } catch (e) { }` | Mesmo que JS | Retorna `(valor, error)` | `try: ... except:` | `try { } catch (Exception $e) { }` |
+| **Ponteiro (`*`)** | Não usa | Não usa | Sim: `*T`, `&var` | Não usa | Não usa |
+| **Visibilidade** | Tudo público | `private`, `protected`, `public` | Maiúscula = exportado (`Func`) | `_` ou `__` = "privado" | `public`, `private`, `protected` |
+| **Frameworks (Backend)** | Express, Fastify, NestJS | Express, NestJS, Fastify | Gin, Echo, Fiber | FastAPI, Flask, Django | Slim, Laravel, Symfony |
+| **ORMs** | Prisma, TypeORM, Sequelize | Prisma, TypeORM, Sequelize | GORM, Ent | SQLAlchemy, Django ORM | Doctrine, Eloquent |
+| **Gerenciador de pacotes** | `npm` / `yarn` | `npm` / `yarn` | `go mod` | `pip` | `composer` |
+| **Arquivo de dependências** | `package.json` | `package.json` | `go.mod` | `requirements.txt` | `composer.json` |
+| **Ambiente virtual** | `nvm` (opcional) | `nvm` | Não usa | `venv`, `poetry` | Não obrigatório |
+
+> 💡 **Dica**: Este projeto segue a mesma estrutura lógica em todos os backends (7 etapas padronizadas) para facilitar o aprendizado por analogia. Veja mais em: [github.com/logicinfocursos/learning_new_techs](https://github.com/logicinfocursos/learning_new_techs.git)

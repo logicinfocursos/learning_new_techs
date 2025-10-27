@@ -134,3 +134,7 @@ backend/**/Thumbs.db
 backend/**/.idea/
 backend/**/*.swp
 backend/**/*.swo
+
+fullstack/
+containers/
+readme.md.backup
